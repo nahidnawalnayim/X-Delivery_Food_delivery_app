@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input{
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+ button{
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+#container {
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.37) 19%, rgba(0, 0, 0, 0.27) 34%, rgba(0, 0, 0, 0.192) 47%, rgba(0, 0, 0, 0.137) 56.5%, rgba(0, 0, 0, 0.098) 65%, rgba(0, 0, 0, 0.063) 73%, rgba(0, 0, 0, 0.035) 80.2%, rgba(0, 0, 0, 0.02) 86.1%, rgba(0, 0, 0, 0.01) 91%, rgba(0, 0, 0, 0.004) 95.2%, rgba(0, 0, 0, 0) 98.2%, rgba(0, 0, 0, 0) 100%) ,url('../public/assets/heroImg.webp');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -50;
+    background-position: center center;
+}
