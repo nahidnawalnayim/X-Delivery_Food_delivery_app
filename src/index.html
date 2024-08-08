@@ -27,12 +27,12 @@
     <section class="w-full">
       <div class="flex justify-around pt-5">
         <h1
-          class="text-2xl font-bold mr-16 text-blue-500"
+          class="text-base lg:text-2xl font-bold mr-16 text-blue-500"
           style="font-family: Pacifico, cursive"
         >
           X_Delivery
         </h1>
-        <div class="border px-28 py-1 font-serif rounded-lg">
+        <div class="hidden lg:block border px-28 py-1 font-serif rounded-lg">
           <i class="fa-solid fa-magnifying-glass text-blue-600"></i>
           <input
             id="input_search"
@@ -42,9 +42,13 @@
           />
         </div>
 
-        <div>
-          <button class="px-2 py-2">Sign in</button>
-          <button class="px-4 py-1.5 bg-blue-500 text-white rounded-3xl">
+        <div class="text-sm lg:text-lg">
+          <button class="px-0 lg:px-2 py-0 lg:py-2 text-sm lg:text-base">
+            Sign in
+          </button>
+          <button
+            class="px-2 lg:px-4 py-2 lg:py-1.5 bg-blue-500 text-white rounded-3xl text-xs lg:text-base"
+          >
             Create Account
           </button>
         </div>
@@ -52,38 +56,11 @@
     </section>
 
     <!-- Hero section -->
-    <!-- <div class="bg-white">
-     
-      
-        <div class="relative isolate px-6 lg:px-8">
-          <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
-            <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
-          </div>
-          <div class="mx-auto max-w-2xl py-32 ">
-            <div class="hidden sm:mb-8 sm:flex sm:justify-center">
-              <div class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                Announcing our next round of funding. <a href="#" class="font-semibold text-indigo-600"><span class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
-              </div>
-            </div>
-            <div class="text-center">
-              <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Data to enrich your online business</h1>
-              <p class="mt-6 text-lg leading-8 text-gray-600">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
-              <div class="mt-10 flex items-center justify-center gap-x-6">
-                <a href="#" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
-                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span aria-hidden="true">→</span></a>
-              </div>
-            </div>
-          </div>
-          <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
-            <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
-          </div>
-        </div>
-      </div> -->
 
-    <section id="hero_section" class="pt-5" style="height: 100vh">
-      <div id="container" class="">
+    <section id="hero_section" class="pt-5 lg:h-[100vh]">
+      <div id="container" class="w-full h-3/5 lg:h-full">
         <p
-          class="text-4xl shadow-sm w-[800px] text-white pt-52 pl-20"
+          class="text-2xl lg:text-4xl shadow-sm w-[380px] lg:w-[800px] text-white pt-28 lg:pt-52 pl-4 lg:pl-20"
           style="
             font-family: Montserrat, sans-serif;
             font-weight: 700;
@@ -94,7 +71,7 @@
         </p>
 
         <div
-          class="border py-0.5 font-serif rounded-lg w-[360px] bg-white ml-20 pl-3 mt-5"
+          class="border py-0.5 font-serif rounded-lg w-[320px] lg:w-[360px] bg-white ml-4 lg:ml-20 pl-3 mt-5"
         >
           <i class="fa-solid fa-location-dot text-blue-600"></i>
           <input
@@ -105,7 +82,7 @@
         </div>
 
         <p
-          class="pl-20 text-white font-[Montserrat] text-sm pt-1 font-semibold"
+          class="w-[350px] lg:w-full pl-4 lg:pl-20 text-white font-[Montserrat] text-xs lg:text-sm pt-1 font-semibold"
         >
           To get started, enter your address or Sign In
         </p>
@@ -114,28 +91,28 @@
 
     <!-- mobile hero section -->
 
-    <section class="text-gray-600 body-font pl-52">
+    <section class="text-white body-font pl-52">
       <div
-        class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center justify-center"
+        class="container mx-auto flex px-5 py-5 lg:py-24 md:flex-row flex-col items-center justify-center"
       >
-        <div class="lg:max-w-[450px] lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+        <div class=" lg:max-w-[450px] w-[400px] lg:w-full md:w-1/2 mb-10 md:mb-0 pt-10 h-[450px] lg:h-full">
           <img
-            class="object-cover object-center rounded"
+            class=" w-[300px] lg:w-full object-contain lg:object-cover object-center rounded h-[400px] lg:h-full "
             alt="hero"
-            src="../public/assets/mobiletemp.jpeg"
+            src="../public/assets/mobiletemp.png"
           />
         </div>
 
         <div
-          class="md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center pb-24"
+          class="md:w-1/2 w-[650px] lg:w-full pr-48 lg:pl-24 md:pl-16 flex flex-wrap flex-col md:items-start md:text-left items-center text-center pb-24"
         >
           <h1
-            class=" w-[85%] title-font sm:text-5xl text-2xl mb-4 font-bold text-blue-500"
+            class="w-[85%] title-font sm:text-5xl text-3xl font-[Montserrat] mb-4 font-bold text-blue-500"
           >
-            <br class="hidden lg:inline-block " />Proudly available in 49 states
+            <br class="hidden lg:inline-block" />Proudly available in 49 states
           </h1>
           <p
-            class="mb-8 leading-relaxed w-[75%] font-[Montserrat] font-medium text-xl"
+            class="mb-8 text-gray-700 leading-relaxed w-[75%] font-[Montserrat] font-medium text-xl"
           >
             Favor is the restaurant delivery app that brings food and Texans
             together. Holler if you’re hungry.
@@ -154,10 +131,283 @@
     <!-- Delivery section -->
     <div id="deliver_section" class="flex justify-center text-center">
       <div class="m-auto">
-        <h1 class="text-5xl drop-shadow-xl text-white font-bold">Deliver with Favor</h1>
-        <h4 class="text-lg mt-5 drop-shadow-xl text-white font-semibold">Sign up today, start earning tomorrow</h4>
-        <button class="border-2 px-14 drop-shadow-2xl  text-white text-base mt-5 py-2">GET STARTED</button>
+        <h1 class="text-5xl drop-shadow-xl text-white font-bold">
+          Deliver with X Delivery
+        </h1>
+        <h4 class="text-lg mt-5 drop-shadow-xl text-white font-semibold">
+          Sign up today, start earning tomorrow
+        </h4>
+        <button
+          class="border-2 px-14 drop-shadow-2xl text-white text-base mt-5 py-2"
+        >
+          GET STARTED
+        </button>
       </div>
     </div>
+
+    <!-- two section -->
+
+    <section class="text-white body-font">
+      <div class="container mx-auto py-3">
+        <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+          <div class="sm:w-1/2 mb-10 px-1">
+            <div class="overflow-hidden" id="">
+              <div id="chef" class="flex justify-center text-center">
+                <div class="m-auto">
+                  <h1 class="text-5xl drop-shadow-xl text-white font-bold">
+                    Partner with X Delivery
+                  </h1>
+                  <h4
+                    class="text-lg mt-5 drop-shadow-xl text-white font-semibold"
+                  >
+                    Let's grow your business
+                  </h4>
+                  <button
+                    class="border-2 px-14 drop-shadow-2xl text-white text-base mt-5 py-2"
+                  >
+                    LEARN MORE
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sm:w-1/2 mb-10 px-4">
+            <div class="overflow-hidden" id="">
+              <div id="meeting" class="flex justify-center text-center">
+                <div class="m-auto">
+                  <h1 class="text-5xl drop-shadow-xl text-white font-bold">
+                    Work at X Delivery
+                  </h1>
+                  <h4
+                    class="text-lg mt-5 drop-shadow-xl text-white font-semibold"
+                  >
+                    Join the best tech company in Texas
+                  </h4>
+                  <button
+                    class="border-2 px-14 drop-shadow-2xl text-white text-base mt-5 py-2"
+                  >
+                    View Opportunities
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+
+    <footer class="text-white body-font bg-blue-500 pt-8">
+      <div
+        class="w-[500px] lg:w-full pb-5 flex flex-wrap px-28 pt-2 gap-3"
+        style="border-bottom: 0.12rem solid rgba(255, 255, 255, 0.2)"
+      >
+        <button
+          class="px-14 lg:px-8 py-3 lg:py-3 inline-flex text-blue-500 bg-white border-0 focus:outline-none hover:bg-indigo-600 rounded text-sm font-bold"
+        >
+          GET THE APP
+        </button>
+        <button
+          class="inline-flex text-white bg-blue-400 border-0 py-3 px-8 focus:outline-none hover:bg-indigo-600 rounded text-sm font-bold text-center"
+        >
+          BECOME A RUNNER
+        </button>
+
+        <!-- social media -->
+        <div class="w-64 flex justify-center pt-3 lg:pl-24">
+          <span
+            class="gap-5 inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto"
+          >
+            <a class="text-white">
+              <svg
+                fill="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                ></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-white">
+              <svg
+                fill="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                ></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-white">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+                ></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-white" href="">
+              <svg
+                fill="currentColor"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="0"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="none"
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                ></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+
+        <div
+          class="flex justify-center pl-16 lg:pl-16 font-semibold pt-2.5 text-base font-[Montserrat]"
+        >
+          <nav class="block lg:flex gap-5 text-center leading-7">
+            <li>Careers</li>
+            <li>Partners</li>
+            <li>Blog</li>
+            <li>Press</li>
+            <li>Gift cards</li>
+            <li>Get help</li>
+          </nav>
+        </div>
+      </div>
+      <div
+        class="container px-0 py-14 mx-auto"
+        style="border-bottom: 0.12rem solid rgba(255, 255, 255, 0.2)"
+      >
+        <div
+          class="flex flex-wrap md:text-left text-center text-lg font-[500] font-[Montserrat] -mb-10 -mx-4 justify-center"
+        >
+          <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-white hover:text-gray-800">Austin</a>
+              </li>
+              <li>
+                <a class="text-white hover:text-gray-800">Cedar Park</a>
+              </li>
+              <li>
+                <a class="text-white hover:text-gray-800">Round Rock</a>
+              </li>
+              <li>
+                <a class="text-white hover:text-gray-800">Pflugerville</a>
+              </li>
+            </nav>
+          </div>
+          <div class="hidden lg:flex lg:w-1/6 md:w-1/2 w-full px-4">
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-white hover:text-gray-800">Dallas/Ft. Worth</a>
+              </li>
+              <li>
+                <a class="text-white hover:text-gray-800">Arlington</a>
+              </li>
+              <li>
+                <a class="text-white hover:text-gray-800">Dallas</a>
+              </li>
+              <li>
+                <a class="text-white hover:text-gray-800">Fort Worth</a>
+              </li>
+            </nav>
+          </div>
+          <div class="hidden lg:flex lg:w-1/6 md:w-1/2 w-full px-4">
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-white hover:text-gray-800">Houston</a>
+              </li>
+              <li>
+                <a class="text-white hover:text-gray-800">Katy</a>
+              </li>
+              <li>
+                <a class="text-white hover:text-gray-800">Spring</a>
+              </li>
+              <li>
+                <a class="text-white hover:text-gray-800">Sugar Land</a>
+              </li>
+            </nav>
+          </div>
+          <div class="hidden lg:flex lg:w-1/6 md:w-1/2 w-full px-4">
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-white hover:text-gray-800">San Antonio</a>
+              </li>
+              <li>
+                <a class="text-white hover:text-gray-800">New Braunfels</a>
+              </li>
+              <li>
+                <a class="text-white hover:text-gray-800">Seguin</a>
+              </li>
+              <li>
+                <a class="text-white hover:text-gray-800">Floresville</a>
+              </li>
+            </nav>
+          </div>
+
+          <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+            <nav class="list-none mb-10">
+              <li>
+                <a class="text-white hover:text-gray-800">Waco</a>
+              </li>
+              <li>
+                <a class="text-white hover:text-gray-800">College Station</a>
+              </li>
+              <li>
+                <a class="text-white hover:text-gray-800">San Marcos</a>
+              </li>
+              <li>
+                <a class="text-white hover:text-gray-800">See all cities...</a>
+              </li>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class=" ">
+        <div class="container px-5 py-8 flex flex-wrap mx-auto items-center">
+          <div
+            class="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-start pl-20"
+          >
+            <p
+              class="text-white text-sm text-center sm:text-left font-[Montserrat]"
+            >
+              © Copyright 2024 ,
+              <a
+                href=""
+                class="text-white ml-1"
+                target="_blank"
+                rel="noopener noreferrer"
+                >X Delivery</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-100"></div>
+    </footer>
   </body>
 </html>
